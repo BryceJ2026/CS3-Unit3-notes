@@ -3,13 +3,19 @@
 
 <head>
  <meta charset="utf-8">
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
     <h1> MY FIRST FLASK THING</h1>
+ {% if name %}
+    <p>Hello, {{ name }}</p>
 
-    <p>uh</p>
+    {% else %}
+    <p> Hello, no one!</p>
+
+{% endif %}
 </body>
 
 </html>

@@ -8,7 +8,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    name_data = None
+    return render_template("index.html", name=name_data)
+
 
 # To run YOUR APP enter "FLASK run" into the TERMINAL
 # (if you closed your teminal, open it agai. with CTRL + ')
