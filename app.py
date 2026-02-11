@@ -8,8 +8,17 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    name_data = None
-    return render_template("index.html", name=name_data)
+    name_data = 'None'
+    year_data = 2026
+    #Can also use lists & dictionaries
+    favorite_list = ['Terraria', 'Cloverpit', 'Balatro', 'Tiny Rogues']
+    rating_dict ={
+        'Terraria' : 'Too. Many. Acheviements.',
+        'Cloverpit' : 'LETS GO GAMBLING',
+        'Balatro' : 'Poker.',
+        'Tiny Rouges' : 'ENDLESS COMBOS'
+    }
+    return render_template("index.html", name=name_data, favorites=favorite_list, rating=rating_dict)
 
 
 # To run YOUR APP enter "FLASK run" into the TERMINAL

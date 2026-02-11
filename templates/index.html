@@ -16,6 +16,25 @@
     <p> Hello, no one!</p>
 
 {% endif %}
+
+{% if year == 2026 %}
+<p>nice I guess</p>
+{% endif %}
+
+<hr>
+<ul>
+{% for item in favorites %}
+<li> {{ item }}</li>
+{% endfor %}
+</ul>
+
+<dl>
+    {% for key, val in rating.items() %}
+        <dt> {{ key }}</dt>
+        <dd> {{ val }}</dd>
+    {% endfor %}
+</dl>
+
 </body>
 
 </html>

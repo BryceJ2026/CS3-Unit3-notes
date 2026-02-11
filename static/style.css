@@ -7,12 +7,12 @@ h1 {
     color:chartreuse;
     font-style: oblique;
     text-align: left;
-    text-shadow: 2px 2px 1000000000000000000000000000px white;
+    text-shadow: 2px 2px 0px white;
 }
 
 p {
     background: fuchsia;
-    font-weight: 900;
+    font-weight: 90000000000000000000000000000000000px;
     padding:10px;
     border: 2px solid black;
 }
