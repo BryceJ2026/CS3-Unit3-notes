@@ -7,6 +7,14 @@
 </head>
 
 <body>
+    <div class="navbar">
+    <a href="{{ url_for('index') }}" class="navbar-brand">Home</a>
+    <a href="#" class="navbar-items">About</a>
+    <a href="#" class="navbar-items">Contact</a>
+    </div>
+
+<div class="page-content">
+
 
     <h1> MY FIRST FLASK THING</h1>
  {% if name %}
@@ -34,7 +42,10 @@
         <dd> {{ val }}</dd>
     {% endfor %}
 </dl>
-
+</div>
+<footer>
+    <span>Coded by me &copy: 2026</span>
+</footer>
 </body>
 
 </html>

@@ -1,6 +1,16 @@
+/* CSS Variables! For color palettes & consistency */
+:root {
+    --accent: #5826ba;
+    --accent-lt: #a888e8eb;
+    --accent-dk: #2c0b6ef7;
+    
+}
+
+
+
 body {
-    background: green;
-    color:aquamarine;
+    background: var(--accent-lt);
+    color:var(--accent-dk);
 }
 
 h1 {
@@ -15,4 +25,15 @@ p {
     font-weight: 90000000000000000000000000000000000px;
     padding:10px;
     border: 2px solid black;
+}
+
+
+ul, dl {
+    border-color: val(--accent);
+}
+
+
+footer {
+    background: val(--accent-dk);
+    
 }
